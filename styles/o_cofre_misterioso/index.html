@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Cofre Misterioso</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="jogo">
+        <h1>O Cofre Misterioso</h1>
+
+        <p class="instrucao">
+            Escolha um dos três cofres e descubra onde esta o tesouro!
+        </p>
+
+        <section class="cofres" aria-label="Escolha um cofre">
+            <button class="cofre" id="cofre1" data-cofre="1">
+                <span>Cofre 1</span>
+            </button>
+
+            <button class="cofre" id="cofre2" data-cofre="2">
+                <span>Cofre 2</span>
+            </button>
+
+            <button class="cofre" id="cofre3" data-cofre="3">
+                <span>Cofre 3</span>
+            </button>
+        </section>
+
+        <div id="resultado" class="resultado" aria-live="polite">
+            O prêmio está escondido. Faça sua escolha!
+        </div>
+
+        <section class="placar">
+            <div class="contador">
+                <span>Tentativas</span>
+                <strong id="tentativas">0</strong>
+            </div>
+
+            <div class="contador">
+                <span> Vitórias</span>
+                <strong id="vitorias">0</strong>
+            </div>
+        </section>
+
+        <div class="acoes">
+            <button id="jogarNovamente" class="botao-principal">
+                🔄 Jogar Novamente
+            </button>
+
+            <button id="zerar" class="botao-secundario">
+                🗑️ Zerar Placar
+            </button>
+        </div>
+
+        <p class="rodape"> Boa sorte!</p>
+    </main>
+</body>
+</html>
+
+   
